@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="white_url" translatable="false">""</string>
+    <string name="sdk_token" translatable="false">""</string>
+    <string name="app_id" translatable="false">""</string>
+    <string name="white_token" translatable="false">""</string>
+</resources>

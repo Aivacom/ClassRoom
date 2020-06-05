@@ -1,0 +1,81 @@
+
+/**
+ * response data on success is as below:
+ * success on create:
+{
+    "code": 200,
+    "msg": {
+        "room": {
+            "id": 2145819,
+            "name": "test1",
+            "limit": 0,
+            "teamId": 1074,
+            "adminId": 949,
+            "mode": "historied",
+            "template": "meeting",
+            "region": "cn",
+            "uuid": "5bedc9915eb34cefa9b7c740dd339ed2",
+            "updatedAt": "2020-03-06T05:41:33.547Z",
+            "createdAt": "2020-03-06T05:41:33.446Z",
+            "appIdentifier": "com.herewhite.whiteboard",
+            "appHash": "39056f755a1ecc7ccd17268e8f20408e",
+            "appVersion": "2.1.0",
+            "akkoVersion": "1.4.3"
+        },
+        "hare": {
+            "uuid": "5bedc9915eb34cefa9b7c740dd339ed2",
+            "appIdentifier": "com.herewhite.whiteboard",
+            "appVersion": "2.1.0",
+            "appHash": "39056f755a1ecc7ccd17268e8f20408e",
+            "akkoVersion": "1.4.3",
+            "teamId": "1074",
+            "mode": "historied",
+            "region": "cn",
+            "isBan": false,
+            "createdAt": 1583473293522,
+            "updatedAt": 1583473293524,
+            "usersMaxCount": 0,
+            "survivalDuration": 30000
+        },
+        "roomToken": "WHITEcGFydG5lcl9pZD1FOFpmWm5tb3lVMkNVcG9FUmYxS01ZRVdqSno1VzZaamJoZnEmc2lnPTQwZWQyYjM0MGU1NGY4YTdiMjNmMmU1ZDk3ZTNiZDAxNDY0N2Y3YTU6YWRtaW5JZD05NDkmcm9vbUlkPTViZWRjOTkxNWViMzRjZWZhOWI3Yzc0MGRkMzM5ZWQyJnRlYW1JZD0xMDc0JnJvbGU9cm9vbSZleHBpcmVfdGltZT0xNjE1MDMwMjQ1JmFrPUU4WmZabm1veVUyQ1Vwb0VSZjFLTVlFV2pKejVXNlpqYmhmcSZjcmVhdGVfdGltZT0xNTgzNDczMjkzJm5vbmNlPTE1ODM0NzMyOTM0NTUwMA",
+        "code": 201
+    }
+}
+
+     * success on enter.
+     {
+        "code": 200,
+        "msg": {
+            "roomToken": "WHITEcGFydG5lcl9pZD1FOFpmWm5tb3lVMkNVcG9FUmYxS01ZRVdqSno1VzZaamJoZnEmc2lnPTViMGRjMWJkZTFkYjgyYzk5OWJiYWY3NGNkOGFkZDJhYjE3NjhlMTI6YWRtaW5JZD05NDkmcm9vbUlkPTViZWRjOTkxNWViMzRjZWZhOWI3Yzc0MGRkMzM5ZWQyJnRlYW1JZD0xMDc0JnJvbGU9cm9vbSZleHBpcmVfdGltZT0xNjE1MDQ3OTExJmFrPUU4WmZabm1veVUyQ1Vwb0VSZjFLTVlFV2pKejVXNlpqYmhmcSZjcmVhdGVfdGltZT0xNTgzNDkwOTU5Jm5vbmNlPTE1ODM0OTA5NTg2NTcwMA"
+        }
+    }
+
+     * success on close:
+    {
+    "code": 200,
+    "msg": {
+        "room": {
+            "id": 2145819,
+            "teamId": 1074,
+            "adminId": 949,
+            "uuid": "5bedc9915eb34cefa9b7c740dd339ed2",
+            "name": "test1",
+            "limit": 0,
+            "current": 0,
+            "enable": false,
+            "playable": false,
+            "videoready": false,
+            "mode": "historied",
+            "template": "meeting",
+            "region": "cn",
+            "appVersion": "2.1.0",
+            "appHash": "39056f755a1ecc7ccd17268e8f20408e",
+            "akkoVersion": "1.4.3",
+            "appIdentifier": "com.herewhite.whiteboard",
+            "createdAt": "2020-03-06T05:41:33.000Z",
+            "updatedAt": "2020-03-06T06:42:49.000Z"
+        },
+        "code": 404
+        }
+    }
+ */

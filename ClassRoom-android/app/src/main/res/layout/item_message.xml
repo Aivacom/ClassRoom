@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_2"
+    android:paddingBottom="@dimen/dp_2">
+
+    <TextView
+        android:id="@+id/tv_nikename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_8"
+        android:textColor="@color/gray_999999"
+        android:text=""
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nikename"
+        android:textColor="@color/gray_666666"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:text=""
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:textColor="@color/gray_BBBBBB"
+        android:text=""
+        android:textSize="@dimen/sp_12" />
+
+</RelativeLayout>

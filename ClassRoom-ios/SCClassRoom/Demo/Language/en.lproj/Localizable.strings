@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  SCClassRoom
+
+  Created by GasparChu on 2020/3/5.
+  Copyright © 2020 SY. All rights reserved.
+*/
+// Login
+"课堂评价" = "Feedback";
+"中英切换" = "中文";
+"请输入课堂名称"="Please enter class ID.";
+"请输入昵称"="Please enter nickname.";
+"请输入4-8位数字"="4-8 Digits";
+"课堂名称" = "Class ID";
+"昵称" = "Nickname";
+"课堂类型" = "Room Type";
+"角色" = "Role";
+"大班课"="Big Class";
+"学生"="Student";
+"进入课堂" = "Enter";
+"云教育解决方案" = "Education Solutions";
+"网络异常"="Network Error";
+"课堂ID不要以0开头"="Don't start class ID with 0.";
+"昵称不要以0开头"="Don't start class ID with 0.";
+"请求Token"="Request token";
+"请求token失败"="Request token failed";
+// BigLive
+"欢迎使用云教育大班课" = "Welcome to Big Class.";
+"请输入文字..."="Text";
+"禁言中"="Banned";
+"设置用户角色失败"="Failed to set role.";
+"退出房间失败"="Failed to leave room.";
+"进入白板房间失败"="Failed to join whiteboard room.";
+"发送失败"="Message unsent";
+"进入房间失败"="Join failed.";
+"举手中，等待老师连麦"="Hand is up. Connection request is awaiting response from teacher.";
+"已取消举手"="Hand is down.";
+"老师已同意与你连麦"="Connected.";
+"老师:"="Teacher:";
+"我:"="Me:";
+"只看老师发言"="Read teacher's notes only";
+"看全员发言"="Read all attendees' notes";
+"断线超时离开房间"="Left room due to timeout.";
+// Feedback
+"当前版本"="Current Version:";
+"请输入您的手机号或电子邮箱（选填）" = "(Optional) How can we contact you?";
+"请输入反馈内容（不可留空）" = "Please describe your issue.  Don't leave it blank.";
+"提交评价" = "Submit";
+"意见反馈提交成功"="Thanks for your feedback.";
+"意见反馈提交失败"="Submission failed.";

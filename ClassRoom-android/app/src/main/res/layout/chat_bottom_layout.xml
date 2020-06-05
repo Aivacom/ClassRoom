@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_teacherMsg"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_4"
+        android:src="@mipmap/just_see_the_teacher" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_11"
+        android:background="@drawable/bg_chat_edit">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_send_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerHorizontal="true"
+            android:enabled="true"
+            android:singleLine="true"
+            android:inputType="text"
+            android:hint="@string/hint_im_message"
+            android:windowSoftInputMode="adjustPan|stateVisible"
+            android:background="@drawable/bg_chat_edit"
+            android:imeOptions="actionSend"
+            android:maxLength="10"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:textColor="@color/gray_BBBBBB"
+            android:textSize="@dimen/sp_13" />
+
+    </RelativeLayout>
+
+</LinearLayout>

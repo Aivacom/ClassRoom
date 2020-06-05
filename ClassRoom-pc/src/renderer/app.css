@@ -1,0 +1,575 @@
+@font-face {
+    font-family: 'PingFang SC';
+    src: url('../../static/fonts/PingFang-SC.ttf');
+}
+
+@font-face {
+    font-family: 'PingFangSC-Regular';
+    src: url('../../static/fonts/PingFang-SC.ttf');
+}
+
+@font-face {
+    font-family: 'PingFangSC-Medium';
+    src: url('../../static/fonts/PingFangSC-Medium.ttf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.devTools {
+    cursor: pointer;
+    border-bottom-width: 5px;
+    border-bottom-color: transparent;
+    border-bottom-style: dashed;
+}
+
+.devTools:hover {
+    border-bottom-color: blue;
+}
+
+.dialog-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.dialog-maskWhite {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.dialog-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.dialog-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.dialog-setting {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    height: 525px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+#app {
+    height: 100%;
+    min-height: 100%;
+}
+
+.appTitle {
+    position: relative;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(29, 42, 41, 1);
+}
+
+#appTitleClassName {
+    margin: 0 0 0 15px;
+    height: 28px;
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 28px;
+}
+
+.appTitle > a {
+    margin-left: 15px;
+    margin-top: 12px;
+    height: 36px;
+}
+
+#titleNetworkQuality {
+    margin-left: 15px;
+    margin-top: 12px;
+    width: 65px;
+    height: 36px;
+}
+
+#titleClassTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleClassTime > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+#titleClassTime > p {
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 25px;
+}
+
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .tabs:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 5px;
+}
+
+.roomSettingFields {
+    width: 345px;
+    height: 431px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 40px 0px rgba(160, 200, 192, 0.15);
+    border-radius: 12px;
+}
+
+.roomSettingField {
+    margin-top: 15px;
+    margin-left: 23px;
+    width: 300px;
+}
+
+.roomSettingField > p {
+    margin-bottom: 10px;
+    height: 16px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 16px;
+}
+
+.buttonSettingCommon {
+    display: flex;
+    width: 86px;
+    margin: 0 0 0 17px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSettingCommon:hover {
+    cursor: pointer;
+    display: flex;
+    width: 86px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSettingCommon > p {
+    width: 32px;
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 22px;
+}
+
+.buttonCommon {
+    display: inline-flex;
+    cursor: pointer;
+    height: 40px;
+    border: none;
+    background: rgba(49, 182, 158, 1);
+    border-radius: 8px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 22px;
+}
+
+.buttonCommon:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #7ADECE;
+    color: rgba(255, 255, 255, 1);
+}
+
+.buttonCommon[disabled] {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+[tip]:after {
+    content: attr(tip);
+    visibility: hidden;
+    z-index: 100;
+    /* 实现垂直居中 */
+    position: absolute;
+    top: 50%;
+    transform: translate(-5px, -50%);
+    transition: all .3s;
+
+    left: 100%;
+    opacity: 0;
+
+    /* 空白问题 */
+    white-space: pre;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgba(18, 26, 44, 0.8);
+    color: #fff;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1)
+}
+
+.m-tab-wrap {
+    display: inline-block;
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+
+.m-tab {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 10px;
+    padding: 0 6px;
+    line-height: 20px;
+    color: #888888;
+    list-style-type: none;
+    background-color: #444444;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.m-tab.active {
+    color: #ffffff;
+    background-color: #40677f;
+}
+
+.roomParameterBG {
+    background-color: #F0FCF8;
+}
+
+.input {
+    border-radius: 4px;
+    border: 1px solid rgba(229, 230, 229, 1);
+
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 16px;
+}
+
+/*.input:hover{*/
+/*    border: 1px solid #E5E6E5;*/
+/*}*/
+
+.input:focus {
+    border: 1px solid rgba(229, 230, 229, 1);
+}
+
+.inputRoomSetting {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+}
+
+.inputDebug {
+    height: 30px;
+    color: blue;
+}
+
+.selectCommon {
+    -webkit-appearance: none;
+    width: 220px;
+    height: 36px;
+    padding: 0 15px 0 16px;
+    border: 0px;
+    border-radius: 6px;
+    color: rgba(0, 193, 170, 1);
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    background-image: url("../../static/images/select/dropDown.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: rgba(231, 248, 246, 1);
+}
+
+.selectRoomSetting {
+    width: 300px;
+    height: 40px;
+    padding-left: 0;
+    border-radius: 4px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.selectLanguage {
+    height: 36px;
+    position: absolute;
+    left: 100%;
+    transform: translate(-260px, 12px);
+    background-image: none;
+}
+
+.userChatTab {
+    display: block;
+    width: 102px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    color: rgba(153, 153, 153, 1);
+    background: rgba(255, 255, 255, 1);
+}
+
+.userChatTab[disabled] {
+    color: rgba(255, 255, 255, 1);
+    background: rgba(49, 182, 158, 1);
+}
+
+.netWorkStatus {
+    width: 40px;
+    height: 27px;
+}
+
+.netWorkStatus[disabled] {
+    width: 21px;
+    height: 14px;
+}
+
+.whiteBoardToolsCommon {
+    width: 36px;
+    height: 36px;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+    margin: 5px 5px 5px 5px;
+}
+
+.whiteBoardToolsCommon:hover {
+    cursor: pointer;
+    background: rgba(216, 216, 216, 0.2);
+    border-radius: 4px;
+}
+
+.whiteBoardToolsCommon[disabled] {
+    background: rgba(216, 216, 216, 0.2);
+    border-radius: 4px;
+}
+
+.whiteBoardBottomButtonCommon {
+    width: 32px;
+    height: 32px;
+    object-fit: scale-down;
+    border-radius: 6px;
+}
+
+.whiteBoardBottomButtonCommon:hover {
+    cursor: pointer;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 6px;
+}
+
+.whiteBoardBottomButtonCommon[disabled] {
+    background: rgba(245, 245, 245, 1);
+    border-radius: 6px;
+}
+
+.whiteBoardHandsUpButton {
+    content: url("../../static/images/whiteboardtools/hands_up.png");
+}
+
+.whiteBoardHandsUpButton:hover {
+    cursor: pointer;
+    content: url("../../static/images/whiteboardtools/hands_up_hover.png");
+}
+
+.whiteBoardHandsUpButton[disabled] {
+    content: url("../../static/images/whiteboardtools/hands_up_disable.png");
+}
+
+.whiteBoardHandsOffButton {
+    content: url("../../static/images/whiteboardtools/hands_off.png");
+}
+
+.whiteBoardWhiteBoardButton {
+    content: url("../../static/images/whiteboardtools/whiteboard_icon.png");
+}
+
+.whiteBoardPPTBoardButton {
+    content: url("../../static/images/whiteboardtools/ppt_icon.png");
+}
+
+.whiteBoardHandsOffButton:hover {
+    cursor: pointer;
+    content: url("../../static/images/whiteboardtools/hands_off_hover.png");
+}
+
+.whiteBoardShateButton {
+    display: block;
+    content: url("../../static/images/whiteboardtools/screen_share.png");
+}
+
+.whiteBoardShateButton:hover {
+    cursor: pointer;
+    content: url("../../static/images/whiteboardtools/screen_share_hover.png");
+}
+
+.whiteBoardShateButton[disabled] {
+
+    content: url("../../static/images/whiteboardtools/screen_share_disable.png");
+}
+
+.whiteBoardBottomTextCommon {
+    height: 20px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    line-height: 20px;
+    align-self: center;
+}
+
+.dialog-cancel {
+    text-align: center;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    border: 2px solid rgba(230, 230, 230, 1);
+    font-size: 15px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(102, 102, 102, 1);
+}
+
+.dialog-cancel:hover {
+    cursor: pointer;
+    width:120px;
+    height:40px;
+    background:rgba(245,246,246,1);
+    border-radius:20px;
+    border: 2px solid transparent;
+}
+
+.dialog-confirm {
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    background: rgba(49, 182, 158, 1);
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 40px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.dialog-confirm:hover {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background: rgba(91, 199, 178, 1);
+    box-shadow: 0px 5px 13px 0px rgba(129, 225, 209, 0.42);
+    border-radius: 20px;
+}
+
+.roomConfirm {
+    margin-top: 30px;
+}
+
+.roomConfirm:hover {
+    cursor: pointer;
+    margin-top: 30px;
+    background: rgba(91, 199, 178, 1);
+    box-shadow: 0px 5px 13px 0px rgba(129, 225, 209, 0.42);
+    border-radius: 6px;
+}
+
+.imageCommon {
+
+}
+
+.imageCommon:hover {
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+ul li {
+    padding: 0 15px 0 16px;
+    width: 100%;
+    z-index: 2;
+}
+
+ul li:not(.init) {
+    float: left;
+    display: none;
+    background: rgba(255, 255, 255, 1);
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+
+ul li:not(.init):hover, ul li.selected:not(.init) {
+    background: rgba(231, 248, 246, 1);
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(0, 193, 170, 1);
+}
+li.init { cursor: pointer; }
+
+.Select {
+    padding: 0 0 0 0;
+    background-image: url("../../static/images/select/dropDown.png");
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position-x: right;
+    background-position-y: center;
+    background-color: rgba(231, 248, 246, 1);
+}

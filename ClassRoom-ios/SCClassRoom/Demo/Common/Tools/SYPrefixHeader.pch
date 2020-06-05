@@ -1,0 +1,29 @@
+//
+//  SYPrefixHeader.pch
+//  SCClassRoom
+//
+//  Created by Huan on 2020/3/5.
+//  Copyright © 2020 SY. All rights reserved.
+//
+
+#ifndef SYPrefixHeader_pch
+#define SYPrefixHeader_pch
+
+#import <Masonry.h>
+#import "SYConstant.h"
+#import <AFNetworking.h>
+
+#define kLogFilePath [NSHomeDirectory() stringByAppendingString:@"/Library/Caches/Logs"];
+
+#ifdef DEBUG
+    #define NSLog(s,...)        NSLog(@"%s [line %d] %@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+    #define                     NSDump(s) NSLog(@"%@", s)
+#else
+    #define NSLog(s,...)
+    #define NSDump(s)
+#endif
+
+#define WeakSelf __weak __typeof__(self) weakSelf = self;
+#define StrongSelf __strong __typeof(self) strongSelf = weakSelf;
+
+#endif /* SYPrefixHeader_pch */

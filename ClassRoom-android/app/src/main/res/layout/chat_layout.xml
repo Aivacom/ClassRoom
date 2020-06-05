@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--公告-->
+    <include layout="@layout/public_msg_layout" />
+
+    <!--消息列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_chate_room"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_weight="1" />
+    <!--老师、禁言、发言-->
+    <include
+        layout="@layout/chat_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270B48782410DF89007512F8 /* SYLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B48772410DF89007512F8 /* SYLoginView.m */; };
+		270B48842410ECE4007512F8 /* SYBigStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B48832410ECE4007512F8 /* SYBigStatusView.m */; };
+		270B48872410F1CB007512F8 /* SYCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B48862410F1CB007512F8 /* SYCanvasView.m */; };
+		270B488A2410F6B9007512F8 /* SYBigToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 270B48892410F6B9007512F8 /* SYBigToolView.m */; };
+		272995F62411224C0018D631 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 272995F82411224C0018D631 /* Localizable.strings */; };
+		272995FF2411230F0018D631 /* NSBundle+SYLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 272995FE2411230F0018D631 /* NSBundle+SYLanguage.m */; };
+		27299602241200360018D631 /* SYLoginViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 27299601241200360018D631 /* SYLoginViewTextField.m */; };
+		275A6A0A241B5B0D009A8DB1 /* UITextField+SYAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A6A08241B5B0D009A8DB1 /* UITextField+SYAdditions.m */; };
+		275A6ADC2420AA8C009A8DB1 /* SYFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A6ADB2420AA8C009A8DB1 /* SYFeedbackController.m */; };
+		275A6ADF2421C8BA009A8DB1 /* SYRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 275A6ADE2421C8BA009A8DB1 /* SYRequestManager.m */; };
+		275F7F7C24120C5300CC1721 /* SYLoginSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F7F7B24120C5300CC1721 /* SYLoginSwitchView.m */; };
+		275F7F7F24124A1E00CC1721 /* SYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F7F7E24124A1E00CC1721 /* SYNavigationController.m */; };
+		275F7F822412520B00CC1721 /* SYMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F7F812412520B00CC1721 /* SYMessageView.m */; };
+		275F7F852412522A00CC1721 /* SYMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F7F842412522A00CC1721 /* SYMessageCell.m */; };
+		275F7F8824160BFD00CC1721 /* SYMessageTxtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 275F7F8724160BFD00CC1721 /* SYMessageTxtModel.m */; };
+		279BB25524766F9000E54A39 /* MBProgressHUD+SYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB25424766F9000E54A39 /* MBProgressHUD+SYHUD.m */; };
+		279BB25B2476700600E54A39 /* SYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB25A2476700500E54A39 /* SYUtils.m */; };
+		27E889D524592D2C002BC7BC /* SYStudentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E889D424592D2B002BC7BC /* SYStudentModel.m */; };
+		27E889D824592D39002BC7BC /* SYTeacherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E889D724592D39002BC7BC /* SYTeacherModel.m */; };
+		27E889DC2462D2E9002BC7BC /* SYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E889DA2462D2E9002BC7BC /* SYOperation.m */; };
+		27F5043A2432DC14003429DF /* SYAppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F504392432DC14003429DF /* SYAppConfig.plist */; };
+		27F5043E2432FD30003429DF /* NSBundle+SYAppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F5043D2432FD30003429DF /* NSBundle+SYAppConfig.m */; };
+		7CA210EB0E46C084E4D43F79 /* libPods-SCClassRoom.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1665D5F38338379455418F /* libPods-SCClassRoom.a */; };
+		DB55D97D2418D81C003FB5B3 /* SYInterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55D9732418D81C003FB5B3 /* SYInterfaceManager.m */; };
+		DB55D97E2418D81C003FB5B3 /* SYBCEducationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55D9742418D81C003FB5B3 /* SYBCEducationManager.m */; };
+		DB55D9802418D81C003FB5B3 /* SYConsoleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55D97A2418D81C003FB5B3 /* SYConsoleManager.m */; };
+		DB55D9812418D81C003FB5B3 /* SYConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55D97C2418D81C003FB5B3 /* SYConstant.m */; };
+		DB55D9842418D895003FB5B3 /* SYWhiteBoardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB55D9832418D895003FB5B3 /* SYWhiteBoardManager.m */; };
+		DB82EAF7240FF47A009AB16F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82EAF6240FF47A009AB16F /* AppDelegate.m */; };
+		DB82EAFA240FF47A009AB16F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82EAF9240FF47A009AB16F /* SceneDelegate.m */; };
+		DB82EB00240FF47A009AB16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82EAFE240FF47A009AB16F /* Main.storyboard */; };
+		DB82EB02240FF47B009AB16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB82EB01240FF47B009AB16F /* Assets.xcassets */; };
+		DB82EB05240FF47B009AB16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82EB03240FF47B009AB16F /* LaunchScreen.storyboard */; };
+		DB82EB08240FF47B009AB16F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82EB07240FF47B009AB16F /* main.m */; };
+		DB830E492412349A00738662 /* SYMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB830E482412349A00738662 /* SYMessageModel.m */; };
+		DB9013B2241093D700F4B171 /* SYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9013B1241093D700F4B171 /* SYLoginViewController.m */; };
+		DB9013BC2410A85E00F4B171 /* SYBCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9013BB2410A85E00F4B171 /* SYBCViewController.m */; };
+		DBDB43D6241A1EF000E6063D /* UIColor+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDB43D5241A1EF000E6063D /* UIColor+Tools.m */; };
+		DBE0B67424173DAE0085D52F /* SYMessageJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE0B67324173DAE0085D52F /* SYMessageJsonModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		073F3C556D934B592701F28B /* Pods-SCClassRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCClassRoom.release.xcconfig"; path = "Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom.release.xcconfig"; sourceTree = "<group>"; };
+		270B48762410DF89007512F8 /* SYLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYLoginView.h; sourceTree = "<group>"; };
+		270B48772410DF89007512F8 /* SYLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYLoginView.m; sourceTree = "<group>"; };
+		270B48822410ECE4007512F8 /* SYBigStatusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBigStatusView.h; sourceTree = "<group>"; };
+		270B48832410ECE4007512F8 /* SYBigStatusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBigStatusView.m; sourceTree = "<group>"; };
+		270B48852410F1CB007512F8 /* SYCanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYCanvasView.h; sourceTree = "<group>"; };
+		270B48862410F1CB007512F8 /* SYCanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYCanvasView.m; sourceTree = "<group>"; };
+		270B48882410F6B9007512F8 /* SYBigToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBigToolView.h; sourceTree = "<group>"; };
+		270B48892410F6B9007512F8 /* SYBigToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBigToolView.m; sourceTree = "<group>"; };
+		272995F1241122160018D631 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		272995F2241122160018D631 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		272995F72411224C0018D631 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		272995F9241122520018D631 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		272995FD2411230F0018D631 /* NSBundle+SYLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SYLanguage.h"; sourceTree = "<group>"; };
+		272995FE2411230F0018D631 /* NSBundle+SYLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SYLanguage.m"; sourceTree = "<group>"; };
+		27299600241200360018D631 /* SYLoginViewTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYLoginViewTextField.h; sourceTree = "<group>"; };
+		27299601241200360018D631 /* SYLoginViewTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYLoginViewTextField.m; sourceTree = "<group>"; };
+		275A6A08241B5B0D009A8DB1 /* UITextField+SYAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SYAdditions.m"; sourceTree = "<group>"; };
+		275A6A09241B5B0D009A8DB1 /* UITextField+SYAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SYAdditions.h"; sourceTree = "<group>"; };
+		275A6ADA2420AA8C009A8DB1 /* SYFeedbackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYFeedbackController.h; sourceTree = "<group>"; };
+		275A6ADB2420AA8C009A8DB1 /* SYFeedbackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYFeedbackController.m; sourceTree = "<group>"; };
+		275A6ADD2421C8BA009A8DB1 /* SYRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYRequestManager.h; sourceTree = "<group>"; };
+		275A6ADE2421C8BA009A8DB1 /* SYRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYRequestManager.m; sourceTree = "<group>"; };
+		275F7F7A24120C5300CC1721 /* SYLoginSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYLoginSwitchView.h; sourceTree = "<group>"; };
+		275F7F7B24120C5300CC1721 /* SYLoginSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYLoginSwitchView.m; sourceTree = "<group>"; };
+		275F7F7D24124A1E00CC1721 /* SYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYNavigationController.h; sourceTree = "<group>"; };
+		275F7F7E24124A1E00CC1721 /* SYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYNavigationController.m; sourceTree = "<group>"; };
+		275F7F802412520B00CC1721 /* SYMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMessageView.h; sourceTree = "<group>"; };
+		275F7F812412520B00CC1721 /* SYMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMessageView.m; sourceTree = "<group>"; };
+		275F7F832412522A00CC1721 /* SYMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMessageCell.h; sourceTree = "<group>"; };
+		275F7F842412522A00CC1721 /* SYMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMessageCell.m; sourceTree = "<group>"; };
+		275F7F8624160BFD00CC1721 /* SYMessageTxtModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMessageTxtModel.h; sourceTree = "<group>"; };
+		275F7F8724160BFD00CC1721 /* SYMessageTxtModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMessageTxtModel.m; sourceTree = "<group>"; };
+		279BB25324766F9000E54A39 /* MBProgressHUD+SYHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+SYHUD.h"; sourceTree = "<group>"; };
+		279BB25424766F9000E54A39 /* MBProgressHUD+SYHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+SYHUD.m"; sourceTree = "<group>"; };
+		279BB2592476700500E54A39 /* SYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYUtils.h; sourceTree = "<group>"; };
+		279BB25A2476700500E54A39 /* SYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYUtils.m; sourceTree = "<group>"; };
+		27E889D324592D2B002BC7BC /* SYStudentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYStudentModel.h; sourceTree = "<group>"; };
+		27E889D424592D2B002BC7BC /* SYStudentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYStudentModel.m; sourceTree = "<group>"; };
+		27E889D624592D39002BC7BC /* SYTeacherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTeacherModel.h; sourceTree = "<group>"; };
+		27E889D724592D39002BC7BC /* SYTeacherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTeacherModel.m; sourceTree = "<group>"; };
+		27E889DA2462D2E9002BC7BC /* SYOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYOperation.m; sourceTree = "<group>"; };
+		27E889DB2462D2E9002BC7BC /* SYOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYOperation.h; sourceTree = "<group>"; };
+		27F504392432DC14003429DF /* SYAppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SYAppConfig.plist; sourceTree = "<group>"; };
+		27F5043C2432FD30003429DF /* NSBundle+SYAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SYAppConfig.h"; sourceTree = "<group>"; };
+		27F5043D2432FD30003429DF /* NSBundle+SYAppConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SYAppConfig.m"; sourceTree = "<group>"; };
+		2A1665D5F38338379455418F /* libPods-SCClassRoom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCClassRoom.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B49C245DF1B337A2459FB5 /* Pods-SCClassRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCClassRoom.debug.xcconfig"; path = "Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom.debug.xcconfig"; sourceTree = "<group>"; };
+		A69841FCC66A82C2ECB9BFC8 /* Pods-SCClassRoom.distribute.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCClassRoom.distribute.xcconfig"; path = "Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom.distribute.xcconfig"; sourceTree = "<group>"; };
+		DB55D9712418D81C003FB5B3 /* SYInterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYInterfaceManager.h; sourceTree = "<group>"; };
+		DB55D9722418D81C003FB5B3 /* SYBCEducationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBCEducationManager.h; sourceTree = "<group>"; };
+		DB55D9732418D81C003FB5B3 /* SYInterfaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYInterfaceManager.m; sourceTree = "<group>"; };
+		DB55D9742418D81C003FB5B3 /* SYBCEducationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBCEducationManager.m; sourceTree = "<group>"; };
+		DB55D9762418D81C003FB5B3 /* SYConsoleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYConsoleManager.h; sourceTree = "<group>"; };
+		DB55D9772418D81C003FB5B3 /* SYPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPrefixHeader.pch; sourceTree = "<group>"; };
+		DB55D9782418D81C003FB5B3 /* SYConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYConstant.h; sourceTree = "<group>"; };
+		DB55D97A2418D81C003FB5B3 /* SYConsoleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYConsoleManager.m; sourceTree = "<group>"; };
+		DB55D97C2418D81C003FB5B3 /* SYConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYConstant.m; sourceTree = "<group>"; };
+		DB55D9822418D895003FB5B3 /* SYWhiteBoardManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYWhiteBoardManager.h; sourceTree = "<group>"; };
+		DB55D9832418D895003FB5B3 /* SYWhiteBoardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYWhiteBoardManager.m; sourceTree = "<group>"; };
+		DB82EAF2240FF47A009AB16F /* 云教育.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "云教育.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB82EAF5240FF47A009AB16F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB82EAF6240FF47A009AB16F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB82EAF8240FF47A009AB16F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DB82EAF9240FF47A009AB16F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DB82EAFF240FF47A009AB16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB82EB01240FF47B009AB16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB82EB04240FF47B009AB16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB82EB06240FF47B009AB16F /* SCClassRoom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCClassRoom-Info.plist"; sourceTree = "<group>"; };
+		DB82EB07240FF47B009AB16F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB830E472412349A00738662 /* SYMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMessageModel.h; sourceTree = "<group>"; };
+		DB830E482412349A00738662 /* SYMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMessageModel.m; sourceTree = "<group>"; };
+		DB9013B0241093D700F4B171 /* SYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYLoginViewController.h; sourceTree = "<group>"; };
+		DB9013B1241093D700F4B171 /* SYLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYLoginViewController.m; sourceTree = "<group>"; };
+		DB9013BA2410A85E00F4B171 /* SYBCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBCViewController.h; sourceTree = "<group>"; };
+		DB9013BB2410A85E00F4B171 /* SYBCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBCViewController.m; sourceTree = "<group>"; };
+		DBDB43D4241A1EF000E6063D /* UIColor+Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tools.h"; sourceTree = "<group>"; };
+		DBDB43D5241A1EF000E6063D /* UIColor+Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tools.m"; sourceTree = "<group>"; };
+		DBE0B67224173DAE0085D52F /* SYMessageJsonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYMessageJsonModel.h; sourceTree = "<group>"; };
+		DBE0B67324173DAE0085D52F /* SYMessageJsonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYMessageJsonModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB82EAEF240FF47A009AB16F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA210EB0E46C084E4D43F79 /* libPods-SCClassRoom.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26672177C86476EBDC69905E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A1665D5F38338379455418F /* libPods-SCClassRoom.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		270B48722410DE60007512F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				275F7F7A24120C5300CC1721 /* SYLoginSwitchView.h */,
+				275F7F7B24120C5300CC1721 /* SYLoginSwitchView.m */,
+				27299600241200360018D631 /* SYLoginViewTextField.h */,
+				27299601241200360018D631 /* SYLoginViewTextField.m */,
+				270B48762410DF89007512F8 /* SYLoginView.h */,
+				270B48772410DF89007512F8 /* SYLoginView.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		272995F3241122290018D631 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				272995F82411224C0018D631 /* Localizable.strings */,
+				272995FD2411230F0018D631 /* NSBundle+SYLanguage.h */,
+				272995FE2411230F0018D631 /* NSBundle+SYLanguage.m */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		275A6AD92420AA5D009A8DB1 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				275A6ADA2420AA8C009A8DB1 /* SYFeedbackController.h */,
+				275A6ADB2420AA8C009A8DB1 /* SYFeedbackController.m */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		27F5043B2432FCC6003429DF /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				27F504392432DC14003429DF /* SYAppConfig.plist */,
+				27F5043C2432FD30003429DF /* NSBundle+SYAppConfig.h */,
+				27F5043D2432FD30003429DF /* NSBundle+SYAppConfig.m */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		5D06440CB7A291D093ECF3AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B49C245DF1B337A2459FB5 /* Pods-SCClassRoom.debug.xcconfig */,
+				073F3C556D934B592701F28B /* Pods-SCClassRoom.release.xcconfig */,
+				A69841FCC66A82C2ECB9BFC8 /* Pods-SCClassRoom.distribute.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB55D9702418D81C003FB5B3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				275A6ADD2421C8BA009A8DB1 /* SYRequestManager.h */,
+				275A6ADE2421C8BA009A8DB1 /* SYRequestManager.m */,
+				DB55D9712418D81C003FB5B3 /* SYInterfaceManager.h */,
+				DB55D9732418D81C003FB5B3 /* SYInterfaceManager.m */,
+				DB55D9722418D81C003FB5B3 /* SYBCEducationManager.h */,
+				DB55D9742418D81C003FB5B3 /* SYBCEducationManager.m */,
+				DB55D9822418D895003FB5B3 /* SYWhiteBoardManager.h */,
+				DB55D9832418D895003FB5B3 /* SYWhiteBoardManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DB55D9752418D81C003FB5B3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				279BB2592476700500E54A39 /* SYUtils.h */,
+				279BB25A2476700500E54A39 /* SYUtils.m */,
+				279BB25324766F9000E54A39 /* MBProgressHUD+SYHUD.h */,
+				279BB25424766F9000E54A39 /* MBProgressHUD+SYHUD.m */,
+				27E889DB2462D2E9002BC7BC /* SYOperation.h */,
+				27E889DA2462D2E9002BC7BC /* SYOperation.m */,
+				DB55D9772418D81C003FB5B3 /* SYPrefixHeader.pch */,
+				275A6A09241B5B0D009A8DB1 /* UITextField+SYAdditions.h */,
+				275A6A08241B5B0D009A8DB1 /* UITextField+SYAdditions.m */,
+				DB55D9782418D81C003FB5B3 /* SYConstant.h */,
+				DB55D97C2418D81C003FB5B3 /* SYConstant.m */,
+				DB55D9762418D81C003FB5B3 /* SYConsoleManager.h */,
+				DB55D97A2418D81C003FB5B3 /* SYConsoleManager.m */,
+				DBDB43D4241A1EF000E6063D /* UIColor+Tools.h */,
+				DBDB43D5241A1EF000E6063D /* UIColor+Tools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DB82EAE9240FF47A009AB16F = {
+			isa = PBXGroup;
+			children = (
+				DB82EAF4240FF47A009AB16F /* SCClassRoom */,
+				DB82EAF3240FF47A009AB16F /* Products */,
+				5D06440CB7A291D093ECF3AC /* Pods */,
+				26672177C86476EBDC69905E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB82EAF3240FF47A009AB16F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB82EAF2240FF47A009AB16F /* 云教育.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB82EAF4240FF47A009AB16F /* SCClassRoom */ = {
+			isa = PBXGroup;
+			children = (
+				DB82EB10240FF683009AB16F /* Demo */,
+				DB82EAF5240FF47A009AB16F /* AppDelegate.h */,
+				DB82EAF6240FF47A009AB16F /* AppDelegate.m */,
+				DB82EAF8240FF47A009AB16F /* SceneDelegate.h */,
+				DB82EAF9240FF47A009AB16F /* SceneDelegate.m */,
+				275F7F7D24124A1E00CC1721 /* SYNavigationController.h */,
+				275F7F7E24124A1E00CC1721 /* SYNavigationController.m */,
+				DB82EAFE240FF47A009AB16F /* Main.storyboard */,
+				DB82EB01240FF47B009AB16F /* Assets.xcassets */,
+				DB82EB03240FF47B009AB16F /* LaunchScreen.storyboard */,
+				DB82EB06240FF47B009AB16F /* SCClassRoom-Info.plist */,
+				DB82EB07240FF47B009AB16F /* main.m */,
+			);
+			path = SCClassRoom;
+			sourceTree = "<group>";
+		};
+		DB82EB10240FF683009AB16F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				27F5043B2432FCC6003429DF /* AppConfig */,
+				272995F3241122290018D631 /* Language */,
+				DB82EB12240FF6E2009AB16F /* Common */,
+				DB82EB13240FF6E2009AB16F /* Controller */,
+				DB82EB14240FF6E2009AB16F /* Model */,
+				DB82EB11240FF6E2009AB16F /* View */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		DB82EB11240FF6E2009AB16F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				275F7F832412522A00CC1721 /* SYMessageCell.h */,
+				275F7F842412522A00CC1721 /* SYMessageCell.m */,
+				275F7F802412520B00CC1721 /* SYMessageView.h */,
+				275F7F812412520B00CC1721 /* SYMessageView.m */,
+				270B48722410DE60007512F8 /* Login */,
+				DB9013AE241093BF00F4B171 /* BigClass */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB82EB12240FF6E2009AB16F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DB55D9702418D81C003FB5B3 /* Manager */,
+				DB55D9752418D81C003FB5B3 /* Tools */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DB82EB13240FF6E2009AB16F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				275A6AD92420AA5D009A8DB1 /* Feedback */,
+				DB9013AA2410939800F4B171 /* BigClass */,
+				DB9013AB2410939800F4B171 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB82EB14240FF6E2009AB16F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27E889D324592D2B002BC7BC /* SYStudentModel.h */,
+				27E889D424592D2B002BC7BC /* SYStudentModel.m */,
+				27E889D624592D39002BC7BC /* SYTeacherModel.h */,
+				27E889D724592D39002BC7BC /* SYTeacherModel.m */,
+				DB9013AC241093AD00F4B171 /* BigClass */,
+				DB9013AD241093AD00F4B171 /* Login */,
+				DB830E472412349A00738662 /* SYMessageModel.h */,
+				DB830E482412349A00738662 /* SYMessageModel.m */,
+				275F7F8624160BFD00CC1721 /* SYMessageTxtModel.h */,
+				275F7F8724160BFD00CC1721 /* SYMessageTxtModel.m */,
+				DBE0B67224173DAE0085D52F /* SYMessageJsonModel.h */,
+				DBE0B67324173DAE0085D52F /* SYMessageJsonModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB9013AA2410939800F4B171 /* BigClass */ = {
+			isa = PBXGroup;
+			children = (
+				DB9013BA2410A85E00F4B171 /* SYBCViewController.h */,
+				DB9013BB2410A85E00F4B171 /* SYBCViewController.m */,
+			);
+			path = BigClass;
+			sourceTree = "<group>";
+		};
+		DB9013AB2410939800F4B171 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DB9013B0241093D700F4B171 /* SYLoginViewController.h */,
+				DB9013B1241093D700F4B171 /* SYLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DB9013AC241093AD00F4B171 /* BigClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BigClass;
+			sourceTree = "<group>";
+		};
+		DB9013AD241093AD00F4B171 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DB9013AE241093BF00F4B171 /* BigClass */ = {
+			isa = PBXGroup;
+			children = (
+				270B48822410ECE4007512F8 /* SYBigStatusView.h */,
+				270B48832410ECE4007512F8 /* SYBigStatusView.m */,
+				270B48852410F1CB007512F8 /* SYCanvasView.h */,
+				270B48862410F1CB007512F8 /* SYCanvasView.m */,
+				270B48882410F6B9007512F8 /* SYBigToolView.h */,
+				270B48892410F6B9007512F8 /* SYBigToolView.m */,
+			);
+			path = BigClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB82EAF1240FF47A009AB16F /* SCClassRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB82EB0B240FF47B009AB16F /* Build configuration list for PBXNativeTarget "SCClassRoom" */;
+			buildPhases = (
+				7F0DB7AA8FE630216C1DFAA6 /* [CP] Check Pods Manifest.lock */,
+				DB82EAEE240FF47A009AB16F /* Sources */,
+				DB82EAEF240FF47A009AB16F /* Frameworks */,
+				DB82EAF0240FF47A009AB16F /* Resources */,
+				ADE8A53111C4EBB995E02CE9 /* [CP] Copy Pods Resources */,
+				0032E37E647C345953B2450A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCClassRoom;
+			productName = SCClassRoom;
+			productReference = DB82EAF2240FF47A009AB16F /* 云教育.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB82EAEA240FF47A009AB16F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = SY;
+				TargetAttributes = {
+					DB82EAF1240FF47A009AB16F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DB82EAED240FF47A009AB16F /* Build configuration list for PBXProject "SCClassRoom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = DB82EAE9240FF47A009AB16F;
+			productRefGroup = DB82EAF3240FF47A009AB16F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB82EAF1240FF47A009AB16F /* SCClassRoom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB82EAF0240FF47A009AB16F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB82EB05240FF47B009AB16F /* LaunchScreen.storyboard in Resources */,
+				27F5043A2432DC14003429DF /* SYAppConfig.plist in Resources */,
+				272995F62411224C0018D631 /* Localizable.strings in Resources */,
+				DB82EB02240FF47B009AB16F /* Assets.xcassets in Resources */,
+				DB82EB00240FF47A009AB16F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0032E37E647C345953B2450A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0DB7AA8FE630216C1DFAA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCClassRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE8A53111C4EBB995E02CE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SCClassRoom/Pods-SCClassRoom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB82EAEE240FF47A009AB16F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB55D97E2418D81C003FB5B3 /* SYBCEducationManager.m in Sources */,
+				279BB25B2476700600E54A39 /* SYUtils.m in Sources */,
+				27F5043E2432FD30003429DF /* NSBundle+SYAppConfig.m in Sources */,
+				DB55D9812418D81C003FB5B3 /* SYConstant.m in Sources */,
+				275F7F8824160BFD00CC1721 /* SYMessageTxtModel.m in Sources */,
+				DB82EAF7240FF47A009AB16F /* AppDelegate.m in Sources */,
+				27E889DC2462D2E9002BC7BC /* SYOperation.m in Sources */,
+				275F7F7C24120C5300CC1721 /* SYLoginSwitchView.m in Sources */,
+				27E889D824592D39002BC7BC /* SYTeacherModel.m in Sources */,
+				DB830E492412349A00738662 /* SYMessageModel.m in Sources */,
+				DB82EB08240FF47B009AB16F /* main.m in Sources */,
+				275F7F7F24124A1E00CC1721 /* SYNavigationController.m in Sources */,
+				DB55D9842418D895003FB5B3 /* SYWhiteBoardManager.m in Sources */,
+				DB55D97D2418D81C003FB5B3 /* SYInterfaceManager.m in Sources */,
+				279BB25524766F9000E54A39 /* MBProgressHUD+SYHUD.m in Sources */,
+				DB55D9802418D81C003FB5B3 /* SYConsoleManager.m in Sources */,
+				DB82EAFA240FF47A009AB16F /* SceneDelegate.m in Sources */,
+				275A6ADF2421C8BA009A8DB1 /* SYRequestManager.m in Sources */,
+				27299602241200360018D631 /* SYLoginViewTextField.m in Sources */,
+				270B48872410F1CB007512F8 /* SYCanvasView.m in Sources */,
+				DBE0B67424173DAE0085D52F /* SYMessageJsonModel.m in Sources */,
+				270B48842410ECE4007512F8 /* SYBigStatusView.m in Sources */,
+				275A6ADC2420AA8C009A8DB1 /* SYFeedbackController.m in Sources */,
+				270B48782410DF89007512F8 /* SYLoginView.m in Sources */,
+				275F7F822412520B00CC1721 /* SYMessageView.m in Sources */,
+				27E889D524592D2C002BC7BC /* SYStudentModel.m in Sources */,
+				275A6A0A241B5B0D009A8DB1 /* UITextField+SYAdditions.m in Sources */,
+				DBDB43D6241A1EF000E6063D /* UIColor+Tools.m in Sources */,
+				DB9013B2241093D700F4B171 /* SYLoginViewController.m in Sources */,
+				270B488A2410F6B9007512F8 /* SYBigToolView.m in Sources */,
+				275F7F852412522A00CC1721 /* SYMessageCell.m in Sources */,
+				272995FF2411230F0018D631 /* NSBundle+SYLanguage.m in Sources */,
+				DB9013BC2410A85E00F4B171 /* SYBCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		272995F82411224C0018D631 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				272995F72411224C0018D631 /* en */,
+				272995F9241122520018D631 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DB82EAFE240FF47A009AB16F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB82EAFF240FF47A009AB16F /* Base */,
+				272995F1241122160018D631 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB82EB03240FF47B009AB16F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB82EB04240FF47B009AB16F /* Base */,
+				272995F2241122160018D631 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB82EB09240FF47B009AB16F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB82EB0A240FF47B009AB16F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB82EB0C240FF47B009AB16F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B49C245DF1B337A2459FB5 /* Pods-SCClassRoom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCClassRoom/Demo/Common/Tools/SYPrefixHeader.pch";
+				INFOPLIST_FILE = "SCClassRoom/SCClassRoom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
+				PRODUCT_NAME = "云教育";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB82EB0D240FF47B009AB16F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073F3C556D934B592701F28B /* Pods-SCClassRoom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCClassRoom/Demo/Common/Tools/SYPrefixHeader.pch";
+				INFOPLIST_FILE = "SCClassRoom/SCClassRoom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
+				PRODUCT_NAME = "云教育";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB82EB0E240FF4F6009AB16F /* Distribute */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribute;
+		};
+		DB82EB0F240FF4F6009AB16F /* Distribute */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69841FCC66A82C2ECB9BFC8 /* Pods-SCClassRoom.distribute.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SCClassRoom/Demo/Common/Tools/SYPrefixHeader.pch";
+				INFOPLIST_FILE = "SCClassRoom/SCClassRoom-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
+				PRODUCT_NAME = "云教育";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribute;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB82EAED240FF47A009AB16F /* Build configuration list for PBXProject "SCClassRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB82EB09240FF47B009AB16F /* Debug */,
+				DB82EB0A240FF47B009AB16F /* Release */,
+				DB82EB0E240FF4F6009AB16F /* Distribute */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribute;
+		};
+		DB82EB0B240FF47B009AB16F /* Build configuration list for PBXNativeTarget "SCClassRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB82EB0C240FF47B009AB16F /* Debug */,
+				DB82EB0D240FF47B009AB16F /* Release */,
+				DB82EB0F240FF4F6009AB16F /* Distribute */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribute;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB82EAEA240FF47A009AB16F /* Project object */;
+}

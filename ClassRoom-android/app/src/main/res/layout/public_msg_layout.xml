@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_39"
+    android:background="@color/gray_E9E9E9"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_public_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_999999"
+        android:paddingStart="@dimen/dp_8"
+        android:paddingEnd="@dimen/dp_8"
+        android:padding="@dimen/dp_2"
+        android:textSize="@dimen/sp_11"
+        android:text="@string/default_public_message" />
+
+</ScrollView>

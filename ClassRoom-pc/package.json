@@ -1,0 +1,75 @@
+{
+  "name": "classroom",
+  "version": "1.1.0",
+  "description": "Thunderbolt Education Demo",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null --arch=ia32"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "electron": "^6.0.9",
+    "electron-builder": "^20.44.4",
+    "electron-webpack": "^2.7.4",
+    "webpack": "^4.39.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@netless/cursor-adapter": "0.0.5",
+    "axios": "^0.19.2",
+    "bulma": "^0.7.1",
+    "compressing": "^1.5.0",
+    "electron-log": "^4.1.1",
+    "html-loader": "^0.5.5",
+    "hummer-rts-sdk": "^3.1.6",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.15",
+    "react": "^16.4.2",
+    "react-color": "^2.18.0",
+    "react-dom": "^16.4.2",
+    "react-select": "^3.1.0",
+    "rxjs": "^6.5.4",
+    "rxjs-compat": "^6.5.4",
+    "source-map-support": "^0.5.9",
+    "thunder-node-sdk": "^2.8.1",
+    "white-react-sdk": "^2.6.4"
+  },
+  "resolutions": {
+    "webpack-sources": "1.0.1"
+  },
+  "build": {
+    "productName": "ClassRoom",
+    "directories": {
+      "output": "bin\\release"
+    },
+    "win": {
+      "icon": "static\\images\\logo\\TED.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "云教育"
+    }
+  },
+  "thunder_electron": {
+    "build": false,
+    "electron_version": "6.0.9"
+  }
+}
