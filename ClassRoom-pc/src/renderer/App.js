@@ -2243,35 +2243,35 @@ class App extends Component {
         };
 
         const images = [{
-            url: "http://resource.sunclouds.com/ppt_v1_01.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_01_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_01.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_01_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_02.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_02_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_02.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_02_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_03.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_03_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_03.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_03_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_04.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_04_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_04.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_04_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_05.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_05_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_05.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_05_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_06.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_06_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_06.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_06_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_07.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_07_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_07.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_07_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_08.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_08_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_08.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_08_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_09.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_09_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_09.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_09_thumb.png"
         }, {
-            url: "http://resource.sunclouds.com/ppt_v1_10.png",
-            thumbUrl: "http://resource.sunclouds.com/ppt_v1_10_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_10.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_10_thumb.png"
         }
         ]
 
@@ -2758,7 +2758,7 @@ class App extends Component {
 
         if (isPlaying) {
             this.getThunderEngine().setAudioSourceType(2);
-            this.getThunderEngine().openAudioFile("http://resource.sunclouds.com/1931.mp3");
+            this.getThunderEngine().openAudioFile("https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/1931.mp3");
             this.getThunderEngine().setAudioFileLooping(-1);
             this.getThunderEngine().startAudioFilePlay();
             this.getThunderEngine().stopLocalAudioStream(false);
