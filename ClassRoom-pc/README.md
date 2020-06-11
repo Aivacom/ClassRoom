@@ -5,6 +5,7 @@ English Version： [English](README.en.md)
 这个开源示例项目演示了互动直播大班课场景Demo的相关功能。
 
 Windows Demo: [点击下载](http://resource.sunclouds.com/ClassRoom_Setup_1.1.0.exe)
+
 Android Demo: [点击下载](http://resource.sunclouds.com/ClassRoom-1.1.0-59-official.apk)  
 ## 1 项目简介
 
