@@ -4,6 +4,10 @@
 
 This open source sample project demonstrates the related functions of the demo of the interactive live broadcast large class scene.
 
+Windows Demo: [Click to download](http://resource.sunclouds.com/ClassRoom_Setup_1.1.0.exe)
+
+Android Demo: [Click to download](http://resource.sunclouds.com/ClassRoom-1.1.0-59-official.apk)  
+
 ## 1 Project Description
 
 The interactive live big class is a Demo example based on the educational scene. You can compile and run the sample code to experience it. The following functions are included in this sample project：
