@@ -1,4 +1,4 @@
-exports.AppVersion = "1.1.0";
+exports.AppVersion = "1.1.1";
 exports.AppName = "";
 exports.AppMainWindowTitle = "ClassRoom";
 exports.ThunderBoltVersion = "2.8.1";

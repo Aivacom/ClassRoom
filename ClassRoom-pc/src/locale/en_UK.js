@@ -21,7 +21,7 @@ const en_UK = {
     roomSettingErrInvalidRoomIdZero:'Don\'t start class ID with 0.',
     roomSettingErrNoTeacherName: "Teacher's name is required.",
     roomSettingRole: "Role",
-    roomSettingAppName: "Education Solutions",
+    roomSettingAppName: "Solutions for Education Scenarios",
     Nickname: "Teacher",
     ClassType: "Big Class",
     Feedback: "Feedback",

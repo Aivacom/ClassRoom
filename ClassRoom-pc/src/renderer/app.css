@@ -20,7 +20,6 @@ html, body {
 
 .devTools {
     cursor: pointer;
-    border-bottom-width: 5px;
     border-bottom-color: transparent;
     border-bottom-style: dashed;
 }

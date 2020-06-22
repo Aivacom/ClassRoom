@@ -9,11 +9,11 @@
     tools:context="sy.scclassroom.ui.activity.LoginActivity">
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_class_room_logo"
-        android:layout_width="@dimen/dp_44"
-        android:layout_height="@dimen/dp_36"
+        android:layout_width="@dimen/dp_132"
+        android:layout_height="@dimen/dp_24"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@mipmap/scclassroom_logo"
+        android:src="@mipmap/classroom_login_logo"
         android:layout_marginTop="@dimen/dp_11"
         android:layout_marginLeft="@dimen/dp_15"
         >

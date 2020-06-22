@@ -383,9 +383,9 @@ class HSAJS extends HSA {
                 let newResult = {onlineUids:[]}
 
                 uids.forEach(uid => {
-                    if (res.onlineStatus[uid]) {
+                    // if (res.onlineStatus[uid]) {
                         newResult.onlineUids.push(uid);
-                    }
+                    // }
                 })
                 // this.invokeGetChannelUserListResult(res);
                 resolve(newResult);

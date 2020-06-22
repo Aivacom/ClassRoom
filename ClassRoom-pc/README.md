@@ -55,11 +55,12 @@ English Version： [English](README.en.md)
   直接安装sdk，默认是不会进行编译，是不能直接使用的，可以在你的项目的package.json文件里加上配置，这样在npm install时将自动编译sdk：
   ```json
   "thunder_electron": {
-    "build": true,    				//是否在npm install时进行自动编译
-    "electron_version": "6.0.9",   //你的项目使用的electron版本号 默认6.0.9
-    "msvs_version":"2015"			//编译使用的vs版本号，默认2015
+    "build": true,    				    //是否在npm install时进行自动编译
+    "electron_version": "6.0.9",  //你的项目使用的electron版本号 默认6.0.9
+    "msvs_version":"2015"			    //编译使用的vs版本号，默认2015
   }
   ```
+  
   windows配置命令[target是你的项目使用的electron版本号，msvs_version是你安装的vs版本号，也可以指定安装2015的编译环境：`example npm install --g --production windows-build-tools --vs2015]`：
 
   执行 `cd node_modules/thunder-node-sdk`
@@ -78,8 +79,8 @@ English Version： [English](README.en.md)
 
 | SDK | 版本 |
 |:----|:----|
-| RTC | 2.8.1 |
-| RTS | 3.1.6 |
+| RTC-Electron | 2.8.1 |
+| RTS-JS | 3.1.6 |
 
 ### 使用的 SDK API 说明
 

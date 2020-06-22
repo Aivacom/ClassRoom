@@ -17,7 +17,7 @@ class LogoImage extends React.Component {
     render() {
         return (
             <div className='devTools'>
-                <img alt='' src={renderUtils.getImage("images/logo/logo.png")}
+                <img alt='' src={renderUtils.getImage(this.props.src)}
                      onClick={this.handleDevToolsShow.bind(this)}
 
                      style={{

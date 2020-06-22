@@ -24,12 +24,25 @@ import {UserCursor} from "@netless/cursor-adapter";
 import LogFactory from "../log/LogFactory";
 import HttpApi from "../common/HttpApi";
 import {AppId} from "../ProductConfig"
-import {flatMap, concatMap, filter, debounceTime, distinctUntilChanged, bufferTime} from "rxjs/operators";
-import {BehaviorSubject, Observable, range, forkJoin, zip} from "rxjs";
+import {
+    flatMap,
+    concatMap,
+    filter,
+    debounceTime,
+    distinctUntilChanged,
+    bufferTime,
+    delay,
+    take,
+    catchError,
+    map, retry, tap
+} from "rxjs/operators";
+import {BehaviorSubject, Observable, range, forkJoin, zip, throwError, of, timer} from "rxjs";
+import {retryWhen} from "rxjs/operators";
 import {fromPromise} from "rxjs/internal-compatibility";
 import "rxjs/operator/do";
 import Axios from "axios";
 import * as _ from 'lodash';
+import * as defer from "rxjs";
 
 const fs = require('fs');
 const compressing = require('compressing');
@@ -1090,48 +1103,65 @@ class App extends Component {
         console.log("App.getUserAttr: userIds = " + JSON.stringify(userIds));
         let getUserAttrObs = [];
         try {
-            userIds.forEach((uid, key) => {
-                getUserAttrObs.push(fromPromise(this.getThunderEngine().getUserAttributes(uid)));
-            });
+            for (var i = 0; i < userIds.length; i++) {
+                let uid = userIds[i];
+                if (uid === this.state.uid) {
+                    continue;
+                }
 
-            forkJoin(getUserAttrObs).subscribe(
-                userAttrs => {
+                Observable.create(async (obs) => {
+                    let result = await this.getThunderEngine().getUserAttributes(uid);
+                    if (!result.attributes || !result.attributes[`${result.uid}`]) {
+                        obs.error("error");
+                    }
+                    obs.next(result);
+                }).pipe(retryWhen(errors =>
+                    errors.pipe(
+                        flatMap((error, count) => {
+                            if (error == "error") {
+                                console.log(error);
+                                return ++count >= 3 ? throwError(error) : timer(count * 1000);
+                            } else {
+                                return throwError(error);
+                            }
+                        }))
+                )).subscribe((userAttr) => {
+                    console.log("getUserAttributes " + JSON.stringify(userAttr));
+
                     let users = this.state.users;
                     let needUpdate = false;
-                    userAttrs.forEach((userAttr, index) => {
-                        console.log("Observable.forkJoin getUserAttributes userInfo = " + JSON.stringify(userAttr));
-                        // let userAttrB = JSON.parse(userAttr);
-                        if (userAttr.attributes && userAttr.uid && userAttr.attributes[`${userAttr.uid}`] && JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname) {
-                            // this.addUser(userAttr.uid, JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname, 2);
-                            let user = {
-                                uid: userAttr.uid,
-                                nickName: JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname,
-                                role: 2
-                            }
+                    // userAttrs.forEach((userAttr, index) => {
+                    console.log("Observable.forkJoin getUserAttributes userInfo = " + JSON.stringify(userAttr));
 
-                            let result = this.indexOfUsers(user, users);
-                            if (result == -1) {
-                                needUpdate = true;
-                                users.push(user);
-                            } else {
-                                users[result].nickName = nickname;
-                            }
-                            console.log("this.state.users length = " + JSON.stringify(users));
+                    if (userAttr.attributes && userAttr.uid && userAttr.attributes[`${userAttr.uid}`] && JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname) {
+                        // this.addUser(userAttr.uid, JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname, 2);
+                        let user = {
+                            uid: userAttr.uid,
+                            nickName: JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname,
+                            role: 2
                         }
-                    });
+
+                        let result = this.indexOfUsers(user, users);
+                        if (result == -1) {
+                            needUpdate = true;
+                            users.push(user);
+                        } else {
+                            users[result].nickName = JSON.parse(userAttr.attributes[`${userAttr.uid}`]).nickname;
+                        }
+                        console.log("this.state.users length = " + JSON.stringify(users));
+                    }
 
                     if (needUpdate) {
                         this.setState({
                             users: users
                         });
                     }
-                },
-                err => {
-
-                },
-                () => {
-                }
-            )
+                    }, (error) => {
+                        console.error(error);
+                    }, () => {
+                        console.error("getUserAttributes complete");
+                    });
+            };
         } catch (err) {
             console.log("Observable.forkJoin getUserAttributes" + JSON.stringify(err));
         }
@@ -2846,7 +2876,7 @@ class App extends Component {
                     paddingLeft: "15px"
                 }}>
 
-                    <LogoImage height='36px'/>
+                    <LogoImage height='18px' src="images/logo/logo.png"/>
 
                     <p id='appTitleClassName'>{this.state.lang.mainRoomName}{this.state.roomId}</p>
                     <div className='tile'></div>

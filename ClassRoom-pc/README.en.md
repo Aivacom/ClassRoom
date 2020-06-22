@@ -78,8 +78,8 @@ Note：
 
 | SDK | Version |
 |:----|:----|
-| RTC | 2.8.1 |
-| RTS | 3.1.6 |
+| RTC-Electron | 2.8.1 |
+| RTS-JS | 3.1.6 |
 
 ### SDK API used
 

@@ -7,7 +7,7 @@ CALL node-gyp configure --target=6.0.9 --msvs_version=2015 --arch=ia32 --dist-ur
 CALL node-gyp build
 if ERRORLEVEL 1 (
    exit /b 22
-) 
+)
 
 cd ../../
 
@@ -23,5 +23,5 @@ echo dist-successed.
 rd /s /q bin\release\win-ia32-unpacked
 del bin\release\*.blockmap
 del bin\release\*.yaml
- 
+
 exit /b ERRORLEVEL

@@ -119,8 +119,7 @@ class RoomSetting extends React.Component {
                             margin: '0 0 0 15px',
                             alignSelf: "center"
                         }}>
-                            <LogoImage width='44px' height='36px'>
-                            </LogoImage>
+                            <LogoImage height='18px' src="images/logo/login_logo.png"></LogoImage>
                         </div>
                         <div style={{
                             height: "fit-content",
@@ -193,16 +192,22 @@ class RoomSetting extends React.Component {
                     }}>
                         <div style={{
                             width: '345px',
-
+                            position: 'relative'
                         }}>
                             <p style={{
-                                height: '28px',
+                                position: 'absolute',
+                                left: 0,
+                                top: 0,
                                 fontSize: '26px',
                                 fontFamily: 'PingFangSC-Medium,PingFang SC',
                                 fontWeight: '500',
                                 color: 'rgba(51,51,51,1)',
                                 lineHeight: '28px'
                             }}>{this.state.lang.roomSettingAppName}</p>
+
+                            <div style={{
+                                height: '28px'
+                            }}></div>
 
                             <div style={{
                                 display: 'flex',
@@ -232,7 +237,6 @@ class RoomSetting extends React.Component {
                                     }}>V{AppConstant.AppVersion}</p>
                                     <p style={{
                                         width: '151px',
-                                        height: '60px',
                                         fontSize: '14px',
                                         fontFamily: 'BarlowSemiCondensed-SemiBold,BarlowSemiCondensed',
                                         fontWeight: '600',

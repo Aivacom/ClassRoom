@@ -85,13 +85,13 @@
     }];
     [self.LogoImg mas_makeConstraints:^(MASConstraintMaker *make) {
         if (@available(iOS 11.0, *)) {
-            make.top.mas_equalTo(self.mas_safeAreaLayoutGuideTop).mas_offset(11.f);
+            make.top.mas_equalTo(self.mas_safeAreaLayoutGuideTop).mas_offset(18.f);
         } else {
-            make.top.mas_offset(31.f);
+            make.top.mas_offset(38.f);
         }
         make.left.mas_offset(kLeftOrRightConstraints);
-        make.width.mas_offset(44.f);
-        make.height.mas_offset(36.f);
+        make.width.mas_offset(132.f);
+        make.height.mas_offset(24.f);
     }];
     [self.feedbackBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.languageSwitchBtn);
@@ -105,7 +105,7 @@
         make.height.mas_offset(26.f);
     }];
     [self.DescriptionLbl mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.LogoImg.mas_bottom).mas_offset(18.f);
+        make.top.mas_equalTo(self.LogoImg.mas_bottom).mas_offset(23.f);
         make.left.mas_offset(kLeftOrRightConstraints);
         make.height.mas_offset(28.f);
     }];
@@ -188,7 +188,7 @@
 {
     [self.feedbackBtn setTitle:[NSBundle yy_localizedStringWithKey:@"课堂评价"] forState:UIControlStateNormal];
     [self.languageSwitchBtn setTitle:[NSBundle yy_localizedStringWithKey:@"中英切换"] forState:UIControlStateNormal];
-    self.DescriptionLbl.text = [NSBundle yy_localizedStringWithKey:@"云教育解决方案"];
+    self.DescriptionLbl.text = [NSBundle yy_localizedStringWithKey:@"云教育场景解决方案"];
     self.classRoomNameLbl.text = [NSBundle yy_localizedStringWithKey:@"课堂名称"];
     self.nickNameLbl.text = [NSBundle yy_localizedStringWithKey:@"昵称"];
     self.classRoomTypeLbl.text = [NSBundle yy_localizedStringWithKey:@"课堂类型"];
