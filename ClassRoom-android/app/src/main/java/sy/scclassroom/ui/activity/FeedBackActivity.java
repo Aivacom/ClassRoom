@@ -40,8 +40,8 @@ public class FeedBackActivity extends BaseActivity {
     @Override
     protected void initView() {
         toolbar.setNavigationOnClickListener(v -> FeedBackActivity.this.finish());
-        mTvFeedBackVersion.setText(getResources().getString(R.string.the_current_version) +
-                "-scclassroom-" + BuildConfig.VERSION_CODE);
+        mTvFeedBackVersion.setText("当前版本:V" + BuildConfig.VERSION_NAME +
+                "-classroom-" + BuildConfig.VERSION_CODE );
         //设置键盘监听
         mFeedbackEdit.addTextChangedListener(mFeedbackEditWatcher);
     }
