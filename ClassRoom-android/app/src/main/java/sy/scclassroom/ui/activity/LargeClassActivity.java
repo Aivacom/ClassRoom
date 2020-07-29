@@ -1061,6 +1061,11 @@ public class LargeClassActivity extends BaseActivity {
 
     public void leaveSetAttributes() {
         if (hasNetwork()) {
+            String appid = getApplicationContext().getString(R.string.app_id);
+            if (appid.equals("")) {
+                addText("[HMR] please input appid");
+                return;
+            }
             EducationServiceImpl manager = EducationServiceImpl.getInstances();
             manager.stopDownMicrophone();
             manager.leaveRoom();
@@ -1069,6 +1074,11 @@ public class LargeClassActivity extends BaseActivity {
 
     public void leaveRoom() {
         if (hasNetwork()) {
+            String appid = getApplicationContext().getString(R.string.app_id);
+            if (appid.equals("")) {
+                addText("[HMR] please input appid");
+                return;
+            }
             EducationServiceImpl manager = EducationServiceImpl.getInstances();
             manager.leaveRoom();
         }

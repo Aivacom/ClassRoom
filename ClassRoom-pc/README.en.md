@@ -83,7 +83,7 @@ Note：
 | SDK | Version |
 |:----|:----|
 | RTC-Electron | 2.8.1 |
-| RTS-JS | 3.1.6 |
+| RTS-JS | 3.2.1 |
 
 ### SDK API used
 
@@ -91,25 +91,23 @@ Note：
 
 | API | Function |
 |:-------------|:---------|
-|[createEngine](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginecreateengine)|Create the Thunder::IThunderEngine instance|
-|[initialize](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineinitialize)|Initialize the engine|
-|[setRoomMode](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetroommode)|Set room mode|
-|[setMediaMode](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetmediamode)|Set media format|
-|[setAudioConfig](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetaudioconfig)|Set audio parameters and application scenarios|
-|[setVideoEncoderConfig](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetvideoencoderconfig)|Set video encoding configuration. Detailed description|
-|[joinRoom](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginejoinroom)|Join a room|
-|[leaveRoom](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineleaveroom)|Leaving room indicates hang off or exiting conversation|
-|[stopAllRemoteVideoStreams](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopallremotevideostreams)|Stop/Receive all remote videos|
-|[stopRemoteVideoStream](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopremotevideostream)|Stop/Receive designated remote video|
-|[stopAllRemoteAudioStreams](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopallremoteaudiostreams)|Stop/Receive all audio data|
-|[stopRemoteAudioStream](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopremoteaudiostream)|Stop/Receive audio data of specified users|
-|[setRemoteVideoCanvas](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetremotevideocanvas)|Set the rendering view of the remote video|
-|[setLocalVideoCanvas](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetlocalvideocanvas)|Set the rendering view of the local video|
-|[startVideoPreview](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestartvideopreview)|Start camera video preview|
-|[stopVideoPreview](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopvideopreview)|Stop camera video preview|
-|[stopLocalAudioStream](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestoplocalaudiostream)|Stop broadcasting/Publish audio (including starting capture, encoding, and stream publishing)|
-|[stopLocalVideoStream](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestoplocalvideostream)|Enable/Disable local video sending|
-|[enableCaptureVolumeIndication](http://docs.aivacom.com/cloud/en/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineenablecapturevolumeindication)|Enable callback of volume capture|
+|[createEngine](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#createengine)|Create the Thunder::IThunderEngine instance|
+|[initialize](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#initialize)|Initialize the engine|
+|[setRoomMode](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setroommode)|Set room mode|
+|[setMediaMode](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setmediamode)|Set media format|
+|[setAudioConfig](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setaudioconfig)|Set audio parameters and application scenarios|
+|[setVideoEncoderConfig](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setvideoencoderconfig)|Set video encoding configuration. Detailed description|
+|[joinRoom](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#joinroom)|Join a room|
+|[leaveRoom](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#leaveroom)|Leaving room indicates hang off or exiting conversation|
+|[stopAllRemoteVideoStreams](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopallremotevideostreams)|Stop/Receive all remote videos|
+|[stopRemoteVideoStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopremotevideostream)|Stop/Receive designated remote video|
+|[stopAllRemoteAudioStreams](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopallremoteaudiostreams)|Stop/Receive all audio data|
+|[stopRemoteAudioStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopremoteaudiostream)|Stop/Receive audio data of specified users|
+|[startVideoPreview](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#startvideopreview)|Start camera video preview|
+|[stopVideoPreview](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopvideopreview)|Stop camera video preview|
+|[stopLocalAudioStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stoplocalaudiostream)|Stop broadcasting/Publish audio (including starting capture, encoding, and stream publishing)|
+|[stopLocalVideoStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stoplocalvideostream)|Enable/Disable local video sending|
+|[enableCaptureVolumeIndication](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#enablecapturevolumeindication)|Enable callback of volume capture|
 
 - RTS SDK
 

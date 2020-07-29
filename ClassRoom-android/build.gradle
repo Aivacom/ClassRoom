@@ -3,7 +3,7 @@ buildscript {
 
     repositories {
         mavenLocal()
-        maven { url "http://nexus.sunclouds.com:8081/nexus/content/groups/public/" }
+        maven { url "http://nexus.jocloud.com:8081/nexus/content/groups/public/" }
 
         google()
         jcenter()
@@ -21,7 +21,7 @@ buildscript {
 allprojects {
     repositories {
         mavenLocal()
-        maven { url "http://nexus.sunclouds.com:8081/nexus/content/groups/public/" }
+        maven { url "http://nexus.jocloud.com:8081/nexus/content/groups/public/" }
         maven { url 'https://jitpack.io' }
         google()
         jcenter()

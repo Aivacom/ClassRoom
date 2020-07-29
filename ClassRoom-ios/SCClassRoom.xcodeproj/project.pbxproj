@@ -719,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
 				PRODUCT_NAME = "云教育";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -743,7 +743,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
 				PRODUCT_NAME = "云教育";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -820,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.xxx;
 				PRODUCT_NAME = "云教育";
 				TARGETED_DEVICE_FAMILY = "1,2";

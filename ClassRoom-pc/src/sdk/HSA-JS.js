@@ -522,7 +522,7 @@ class HSAJS extends HSA {
         let attr = {};
         attr[key] = prop;
 
-        this._cachedAttributes = {attributes: attr};
+        this._cachedAttributes = {attributes: attr, options: {enableNotification: true}};
 
         this._channel.setUserAttributes(this._cachedAttributes).then((res) => {
             console.log("HSA-JS.setUserAttributes Res: ", JSON.stringify(res));
@@ -547,7 +547,7 @@ class HSAJS extends HSA {
             return;
         }
 
-        this._cachedAttributes = {region: "cn", roomId: roomId, keys: keys};
+        this._cachedAttributes = {region: "cn", roomId: roomId, keys: keys, options: {enableNotification: true}};
 
         return new Promise(async (resolve, reject) => {
             this._channel.on("RoomAttributesDeleted", (data) => {
@@ -592,7 +592,7 @@ class HSAJS extends HSA {
         let attr = {};
         attr[key] = prop;
 
-        this._cachedAttributes = {attributes: attr};
+        this._cachedAttributes = {attributes: attr, options: {enableNotification: true}};
 
         this._channel.addOrUpdateRoomAttributes(this._cachedAttributes).then((res) => {
             console.log("HSA-JS.addOrUpdateRoomAttributes Res: ", JSON.stringify(res));
@@ -621,7 +621,7 @@ class HSAJS extends HSA {
         let attr = {};
         attr[key] = prop;
 
-        this._cachedAttributes = {attributes: attr};
+        this._cachedAttributes = {attributes: attr, options: {enableNotification: true}};
 
         return new Promise((resolve, reject) => {
             this._channel.on("MemberAttributesAddedOrUpdated", (data) => {
@@ -647,7 +647,7 @@ class HSAJS extends HSA {
         let attr = {};
         attr[key] = prop;
 
-        this._cachedAttributes = {region: "cn", roomId: channelId, attributes: attr};
+        this._cachedAttributes = {region: "cn", roomId: channelId, attributes: attr, options: {enableNotification: true}};
 
         this._client.setRoomAttributes(this._cachedAttributes).then((res) => {
             console.log("HSA-JS.setRoomAttributes Res: ", JSON.stringify(res));
@@ -715,7 +715,7 @@ class HSAJS extends HSA {
             return;
         }
 
-        let params = {keys: keys};
+        let params = {keys: keys, options: {enableNotification: true}};
 
         return new Promise((resolve, reject) => {
             this._channel.on("MemberAttributesDeleted", (data) => {

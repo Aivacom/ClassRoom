@@ -119,7 +119,7 @@ class RoomSetting extends React.Component {
                             margin: '0 0 0 15px',
                             alignSelf: "center"
                         }}>
-                            <LogoImage height='18px' src="images/logo/login_logo.png"></LogoImage>
+                            <LogoImage height='24px' src="images/logo/login_logo.png"></LogoImage>
                         </div>
                         <div style={{
                             height: "fit-content",

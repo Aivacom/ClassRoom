@@ -2273,35 +2273,35 @@ class App extends Component {
         };
 
         const images = [{
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_01.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_01_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_01.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_01_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_02.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_02_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_02.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_02_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_03.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_03_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_03.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_03_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_04.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_04_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_04.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_04_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_05.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_05_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_05.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_05_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_06.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_06_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_06.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_06_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_07.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_07_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_07.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_07_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_08.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_08_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_08.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_08_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_09.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_09_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_09.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_09_thumb.png"
         }, {
-            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_10.png",
-            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ppt_v1_10_thumb.png"
+            url: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_10.png",
+            thumbUrl: "https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/Test/ppt_v1_10_thumb.png"
         }
         ]
 
@@ -2788,7 +2788,7 @@ class App extends Component {
 
         if (isPlaying) {
             this.getThunderEngine().setAudioSourceType(2);
-            this.getThunderEngine().openAudioFile("https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/1931.mp3");
+            this.getThunderEngine().openAudioFile("https://jszc-bj.oss-cn-beijing.aliyuncs.com/Resource/ClassRoom/1931.mp3");
             this.getThunderEngine().setAudioFileLooping(-1);
             this.getThunderEngine().startAudioFilePlay();
             this.getThunderEngine().stopLocalAudioStream(false);
@@ -2876,7 +2876,7 @@ class App extends Component {
                     paddingLeft: "15px"
                 }}>
 
-                    <LogoImage height='18px' src="images/logo/logo.png"/>
+                    <LogoImage height='24px' src="images/logo/logo.png"/>
 
                     <p id='appTitleClassName'>{this.state.lang.mainRoomName}{this.state.roomId}</p>
                     <div className='tile'></div>
@@ -3117,12 +3117,12 @@ class App extends Component {
                                     zIndex: '31',
                                     height: '100%',
                                     width: '100%',
-                                    background: 'rgba(66,66,66,1)'
+                                    background: 'rgba(235,235,235,1)'
                                 }}>
                                     <img src={renderUtils.getImage("/images/video/video_logo.png")}
                                          style={{
-                                             width: '74px',
-                                             height: '58px'
+                                             width: '41px',
+                                             height: '30px'
                                          }}/>
                                 </div>
                                 <div style={{

@@ -83,7 +83,7 @@ Android Demo: [点击下载](http://resource.sunclouds.com/ClassRoom-1.1.0-59-of
 | SDK | 版本 |
 |:----|:----|
 | RTC-Electron | 2.8.1 |
-| RTS-JS | 3.1.6 |
+| RTS-JS | 3.2.1 |
 
 ### 使用的 SDK API 说明
 
@@ -91,25 +91,23 @@ Android Demo: [点击下载](http://resource.sunclouds.com/ClassRoom-1.1.0-59-of
 
 | API | 实现功能 |
 |:-------------|:---------|
-|[createEngine](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginecreateengine)|创建ThunderEngine实例|
-|[initialize](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineinitialize)|初始化ThunderEngine|
-|[setRoomMode](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetroommode)|设置房间场景模式|
-|[setMediaMode](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetmediamode)|设置媒体模式|
-|[setAudioConfig](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetaudioconfig)|设置音频参数和使用场景|
-|[setVideoEncoderConfig](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetvideoencoderconfig)|设置视频编码配置|
-|[joinRoom](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginejoinroom)|加入房间|
-|[leaveRoom](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineleaveroom)|离开房间|
-|[stopAllRemoteVideoStreams](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopallremotevideostreams)|停止／接收所有远端视频|
-|[stopRemoteVideoStream](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopremotevideostream)|停止/接收指定的远端视频|
-|[stopAllRemoteAudioStreams](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopallremoteaudiostreams)|停止/接收所有音频数据|
-|[stopRemoteAudioStream](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopremoteaudiostream)|停止/接收指定用户音频数据|
-|[setRemoteVideoCanvas](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetremotevideocanvas)|设置远端视频的渲染视图|
-|[setLocalVideoCanvas](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginesetlocalvideocanvas)|设置本地视频的渲染视图|
-|[startVideoPreview](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestartvideopreview)|开启摄像头视频预览|
-|[stopVideoPreview](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestopvideopreview)|停止摄像头视频预览|
-|[stopLocalAudioStream](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestoplocalaudiostream)|关闭/打开本地音频(停播/开播)(包括启动采集、编码和推流)|
-|[stopLocalVideoStream](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderenginestoplocalvideostream)|打开/关闭本地视频发送。|
-|[enableCaptureVolumeIndication](https://docs.aivacom.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Windows/v2.8.0/function.html#ithunderengineenablecapturevolumeindication)|打开采集音量回调|
+|[createEngine](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#createengine)|创建ThunderEngine实例|
+|[initialize](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#initialize)|初始化ThunderEngine|
+|[setRoomMode](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setroommode)|设置房间场景模式|
+|[setMediaMode](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setmediamode)|设置媒体模式|
+|[setAudioConfig](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setaudioconfig)|设置音频参数和使用场景|
+|[setVideoEncoderConfig](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#setvideoencoderconfig)|设置视频编码配置|
+|[joinRoom](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#joinroom)|加入房间|
+|[leaveRoom](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#leaveroom)|离开房间|
+|[stopAllRemoteVideoStreams](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopallremotevideostreams)|停止／接收所有远端视频|
+|[stopRemoteVideoStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopremotevideostream)|停止/接收指定的远端视频|
+|[stopAllRemoteAudioStreams](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopallremoteaudiostreams)|停止/接收所有音频数据|
+|[stopRemoteAudioStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopremoteaudiostream)|停止/接收指定用户音频数据|
+|[startVideoPreview](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#startvideopreview)|开启摄像头视频预览|
+|[stopVideoPreview](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stopvideopreview)|停止摄像头视频预览|
+|[stopLocalAudioStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stoplocalaudiostream)|关闭/打开本地音频(停播/开播)(包括启动采集、编码和推流)|
+|[stopLocalVideoStream](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#stoplocalvideostream)|打开/关闭本地视频发送。|
+|[enableCaptureVolumeIndication](https://docs.jocloud.com/cloud/cn/product_category/rtc_service/rt_video_interaction/api/Electron/v2.9.0/function.html#enablecapturevolumeindication)|打开采集音量回调|
 
 - RTS SDK
 

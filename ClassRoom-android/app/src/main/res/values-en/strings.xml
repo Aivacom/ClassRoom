@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SCClassRoom</string>
+    <string name="app_name">ClassRoom</string>
     <string name="classroom_assessment">Feedback</string>
     <string name="class_room">Class ID</string>
     <string name="user_name">Nickname</string>
@@ -24,7 +24,7 @@
     <string name="role_me">me:</string>
     <string name="role_student">student:</string>
     <string name="role_teacher">teacher:</string>
-    <string name="education_scene_solution">Education Solutions</string>
+    <string name="education_scene_solution">Solutions for Education Scenarios</string>
     <string name="classroom_role">Student</string>
     <string name="the_current_version">Current Version: V1.0.0</string>
     <string name="please_enter_feedback">Please enter feedback</string>
